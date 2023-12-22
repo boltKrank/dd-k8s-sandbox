@@ -11,17 +11,14 @@ Doocker needs to be installed beforehand, but kubectl and minikube can be instal
 
 ### Minikube
 ```
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64 \
-&& chmod +x minikube \
-&& mv ./minikube /usr/local/bin \
-&& minikube start --extra-config=kubelet.read-only-port=10255
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64 
+sudo install minikube-darwin-arm64 /usr/local/bin/minikube
 ```
 
 ### Kubectl
 ```
-curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl \
-&& chmod +x ./kubectl \
-&& mv ./kubectl /usr/local/bin/kubectl
+curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl 
+sudo install kubectl /usr/local/bin/kubectl
 ```
 
 ### Helm
@@ -96,7 +93,7 @@ my-datadog-operator-6f896c7886-4j2pk    1/1     Running   0          24h   10.24
 
 To check the the agent is communicating, go to "Infrastructure" -> "Host Map" and see if the cluster host has appeared.
 
-Example image (the cluster is the minikube on the right):
+Example image (the cluster is the minikube on the right, the oth):
 
 ![Host map](/images/host_map.png)
 
