@@ -8,5 +8,3 @@ Code change isn't needed, but the agents configuration needs to be updated. It's
 The power of this functionality comes from the DD tags.
 
 This data can be linked with monitors/alerts and SLOs.
-
-    
