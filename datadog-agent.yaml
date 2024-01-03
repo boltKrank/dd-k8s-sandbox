@@ -16,3 +16,5 @@ spec:
       enabled: true
     logCollection:
       enabled: true
+    usm:
+      enabled: true
