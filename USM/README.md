@@ -34,5 +34,5 @@ Container label example:
    my.custom.label.team: 'frontend'
 ```
 
-Universal Service Monitoring automatically detects services running in your infrastructure. If it does not find unified service tags, it assigns them a name based on one of the tags: app, short_image, kube_container_name, container_name, kube_deployment, kube_service.
+Universal Service Monitoring automatically detects services running in your infrastructure. If it does not find unified service tags, it assigns them a name based on one of the tags: app, short_image, kube_container_name, container_name, kube_deployment, kube_service.s
 
